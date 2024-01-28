@@ -7,5 +7,8 @@ public class Main {
     public static void main(String[] args) {
         Person person = new Person("Andrey", "Naumov", 41);
         System.out.println(person);
+
+        Gson gson = new Gson();
+        System.out.println(gson.toJson(person));
     }
 }
